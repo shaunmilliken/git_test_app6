@@ -5,8 +5,8 @@
 <exit_state name="next" target="Element@984912286:1591988279455"/>
 </exit_states>
 </element>
-<element height="46" id="Element@488011624:1591987676830" type="Hang Up" width="97" x="272" y="189"/>
-<element height="46" id="Element@984912286:1591988279455" name="pWelcome" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="107" x="520" y="132">
+<element height="46" id="Element@488011624:1591987676830" type="Hang Up" width="97" x="235" y="262"/>
+<element height="46" id="Element@984912286:1591988279455" name="pWelcome" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="107" x="234" y="135">
 <exit_states>
 <exit_state name="done" target="Element@488011624:1591987676830"/>
 </exit_states>
