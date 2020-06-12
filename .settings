@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project_settings version="6.0.1">
+<general_settings>
+<deploy_version>10.5</deploy_version>
+<maintainer>IBM</maintainer>
+<language>en-US</language>
+<voice_name/>
+<encoding>UTF-8</encoding>
+<subdialog>true</subdialog>
+<session_timeout>15</session_timeout>
+<gateway>cisco_dtmf_02</gateway>
+<loggers>
+<logger class="com.sprint.ivr.global.logging.CVPLogger" enforce_call_event_order="true" name="CVPLogger">
+<config_file name="CVPLoggerConfig.txt"><![CDATA[custom=debug
+defaultInteraction=debug
+elementData=debug
+elementEnter=debug
+elementExit=debug
+elementFlag=debug
+end=debug
+hotevent=debug
+hotlink=debug
+javaApiError=error
+onCallEnd=debug
+onCallStart=debug
+start=debug
+systemError=error
+vxmlError=error
+warning=warn
+xmlApiError=error
+httpRequest=debug
+httpResponse=debug]]></config_file>
+</logger>
+<logger class="com.audium.logger.application.error.ApplicationErrorLogger" enforce_call_event_order="false" name="ErrorLog">
+<config_file name="ErrorLogConfig.xml"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration SYSTEM "../../../../dtds/ApplicationErrorLoggerConfig.dtd">
+<configuration version="1.0" name="ErrorLog">
+<format delimiter="," remove_delimiter_from_content="true" date_format="standard" date_granularity="milliseconds" print_stack_traces="true"/>
+<purge>
+<file_count greater_than="50"/>
+</purge>
+</configuration>]]></config_file>
+</logger>
+<logger class="com.audium.logger.application.admin.ApplicationAdminLogger" enforce_call_event_order="false" name="AdminLog"/>
+</loggers>
+</general_settings>
+<audio_settings>
+<error_message uri="/CVP/audio/error.wav"><![CDATA[Sorry. There has been an error.]]></error_message>
+<suspended_message uri="/CVP/audio/suspend_audio.wav"><![CDATA[Sorry, this voice application has been taken down for maintenance.]]></suspended_message>
+<initial_on_hold>/CVP/audio/onhold_initial.wav</initial_on_hold>
+<main_on_hold>/CVP/audio/onhold_continue.wav</main_on_hold>
+<default_audio_path/>
+</audio_settings>
+<endpoint_settings/>
+<root_doc_settings/>
+</project_settings>
