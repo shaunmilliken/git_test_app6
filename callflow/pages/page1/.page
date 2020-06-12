@@ -2,8 +2,13 @@
 <page id="Page@290125730:1591987669470" name="page1" version="6.0.1">
 <element height="46" id="Element@360018388:1591987669470" name="Start Of Call" start_of_call="true" type="Page Entry" width="113" x="230" y="30">
 <exit_states>
-<exit_state name="next" target="Element@488011624:1591987676830"/>
+<exit_state name="next" target="Element@984912286:1591988279455"/>
 </exit_states>
 </element>
 <element height="46" id="Element@488011624:1591987676830" type="Hang Up" width="97" x="272" y="189"/>
+<element height="46" id="Element@984912286:1591988279455" name="pWelcome" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="107" x="520" y="132">
+<exit_states>
+<exit_state name="done" target="Element@488011624:1591987676830"/>
+</exit_states>
+</element>
 </page>
